@@ -8,12 +8,12 @@ const initialState = { open: false, element: '', title: '', className: '' };
 export function ModalProvider({ children }) {
   const [modal, setModal] = useState(initialState);
 
-  const openModal = (element, { title, className }) => {
+  const openModal = (element, options = {}) => {
     setModal({
       open: true,
       element,
-      title,
-      className,
+      title: options.title ?? '',
+      className: options.className ?? '',
     });
   };
 

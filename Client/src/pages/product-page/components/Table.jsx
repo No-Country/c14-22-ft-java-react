@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
-import { TrashIcon, PencilAltIcon } from '@/assets/svg';
-import { useProducts } from '../../../hooks/useProducts';
+import { TrashIcon, PencilAltIcon, ViewIcon } from '@/assets/svg';
+import { useProducts, useModal } from '@/hooks';
 import { TableSkeleton } from '@/components';
+import ProductDetail from './ProductDetail';
 import swal from 'sweetalert';
 export function Table({ data }) {
   const { loading, deleteProducts } = useProducts();
+  const { openModal } = useModal();
   const headers = [
     'Nombre',
     'Imagen',
@@ -56,44 +58,42 @@ export function Table({ data }) {
             </tr>
           </thead>
           <tbody>
-            {data.map(
-              (
-                {
-                  id,
-                  nombre,
-                  imagen,
-                  categoria,
-                  marca,
-                  fechaVencimiento,
-                  proveedor,
-                  impuesto,
-                  costo,
-                },
-                index
-              ) => (
-                <tr key={index}>
-                  <td>{nombre}</td>
-                  <td>
-                    <div className='w-12 h-12 mask mask-squircle'>
-                      <img src={imagen} alt='Imagen' />
-                    </div>
-                  </td>
-                  <td>{!categoria ? 'NULL' : categoria.nombre}</td>
-                  <td>{!marca ? 'NULL' : marca.nombre}</td>
-                  <td>{fechaVencimiento}</td>
-                  <td>{!proveedor ? 'NULL' : proveedor.nombre}</td>
+            {data.map((product, index) => (
+              <tr key={product.id}>
+                <td>{product.nombre}</td>
+                <td>
+                  <div className='w-12 h-12 mask mask-squircle'>
+                    <img src={product.imagen} alt='Imagen' />
+                  </div>
+                </td>
+                <td>
+                  {!product.categoria ? 'NULL' : product.categoria.nombre}
+                </td>
+                <td>{!product.marca ? 'NULL' : product.marca.nombre}</td>
+                <td>{product.fechaVencimiento}</td>
+                <td>
+                  {!product.proveedor ? 'NULL' : product.proveedor.nombre}
+                </td>
 
-                  <td className='flex gap-5'>
-                    <button onClick={() => deleteProductAlert(id)}>
-                      <TrashIcon />
-                    </button>
-                    <button>
-                      <PencilAltIcon />
-                    </button>
-                  </td>
-                </tr>
-              )
-            )}
+                <td className='flex gap-5'>
+                  <button onClick={() => deleteProductAlert(product.id)}>
+                    <TrashIcon />
+                  </button>
+                  <button>
+                    <PencilAltIcon />
+                  </button>
+                  <button
+                    onClick={() =>
+                      openModal(<ProductDetail product={product} />, {
+                        title: product.nombre,
+                      })
+                    }
+                  >
+                    <ViewIcon />
+                  </button>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       )}
