@@ -271,5 +271,7 @@ Puedes comenzar registrandote en nuestro portal, luego podras iniciar sesion y a
 
 <div align='center'>
 <h3>Agradecimientos</h3>
-<img src="https://assets-global.website-files.com/62cc216ce23f79c10bc88169/63973e99052373b810cce94b_Branding%20NC-06-p-500.png" width="200">
+  <a href="https://www.nocountry.tech/" target="_blank">
+     <img src="https://assets-global.website-files.com/62cc216ce23f79c10bc88169/63973e99052373b810cce94b_Branding%20NC-06-p-500.png" width="200">
+  </a>
 </div>
