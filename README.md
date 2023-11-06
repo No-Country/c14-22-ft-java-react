@@ -196,7 +196,7 @@ Puedes comenzar registrandote en nuestro portal, luego podras iniciar sesion y a
         <a href="https://github.com/crishof" target="_blank">
           <img style='width:8rem' src="https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=172B4D&logo=GitHub&logoColor=FFFFFF&label="/>
         </a>
-        <a href="https://www.linkedin.com/in/joose-ari-b08729233/" target="_blank">
+        <a href="https://www.linkedin.com/in/cristianhof" target="_blank">
           <img style='width:8rem' src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/>
         </a>
         </div>
