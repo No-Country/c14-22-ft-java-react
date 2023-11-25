@@ -15,7 +15,7 @@
     <a href="https://stockwise-client.vercel.app/" target="_blank">
           <img  src="https://img.shields.io/badge/VER_DEMO-3378FF?style=for-the-badge&logo=vercel&logoColor=%23343B4E"/>
        </a>
-   <a href="https://inexpensive-action-production.up.railway.app/swagger-ui/index.html " target="_blank">
+   <a href="https://stockwise.fly.dev/swagger-ui/index.html" target="_blank">
           <img  src="https://img.shields.io/badge/VER_API-3378FF?style=for-the-badge&logo=swagger&logoColor=%23343B4E"/>
       </a>
     <a href="https://www.figma.com/file/lIB64kDohOKOsdSNGkOSue/c14-22-ft-java-react" target="_blank">
@@ -61,7 +61,11 @@ Nuestra aplicación puede mejorar la rentabilidad y la eficiencia operativa de t
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![Fly.io](https://img.shields.io/badge/Fly.io-000?style=for-the-badge&color=6F43E8)
+
+<!--
 ![Railway](https://img.shields.io/badge/Railway-000?style=for-the-badge&logo=railway&logoColor=white&labelColor=black&color=black)
+ -->
 
 <h3>Base de datos</h3>
 
@@ -101,7 +105,7 @@ cd .\Client\ | npm install
 Crear un archivo llamado '.env' con esta variable de entorno
 
 ```sh
-VITE_API_URL=https://inexpensive-action-production.up.railway.app
+VITE_API_URL=https://stockwise.fly.dev
 ```
 
 Correr el proyecto
