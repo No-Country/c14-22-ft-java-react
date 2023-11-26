@@ -36,8 +36,8 @@ export function FormBrand() {
   return (
     <form onSubmit={handleSubmit}>
       <Input
-        label='Nombre de la categoría'
-        placeholder='Ingresa una categoría'
+        label='Nombre de la marca'
+        placeholder='Ingresa una marca'
         {...getFieldProps('name')}
         errorMessage={touched.name && errors.name}
       />

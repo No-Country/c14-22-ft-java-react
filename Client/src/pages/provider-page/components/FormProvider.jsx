@@ -48,7 +48,7 @@ export function FormProduct() {
   return (
     <form onSubmit={handleSubmit}>
       <Input
-        label='Nombre'
+        label='Nombre completo'
         placeholder='Ingresa nombre completo'
         {...getFieldProps('name')}
         errorMessage={touched.nombre && errors.nombre}
