@@ -64,14 +64,14 @@ export function UserInfo() {
             Ver condiciones de servicio
           </Link>
         </li>
-        <li className='border-t-2'
+        {/* <li className='border-t-2'
         onClick={() => openModal(<MercadoPago />, {
           title: 'Mercado Pago',
           className: 'modal-user',
         })}
         >
             <h3>Mercado Pago</h3>
-        </li>
+        </li> */}
         <li className='border-t-2'>
           <button onClick={handlerLogout}>Cerrar sesion</button>
         </li>
