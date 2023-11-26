@@ -34,7 +34,7 @@ export default function Provider() {
           <DataList.Header>
             <Search placeholder='Buscar proveedor' onNewValue={handleSearch} />
             <Button
-              className='gap-3 lg:w-52  btn btn-primary md:w-80'
+              className='gap-3 lg:w-52 btn btn-primary md:w-80'
               onClick={() =>
                 openModal(<FormProduct />, {
                   title: 'Nuevo Proveedor',
