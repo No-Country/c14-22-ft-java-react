@@ -67,7 +67,9 @@ export function Table({ data }) {
                   <button
                     className='btn btn-circle'
                     onClick={() =>
-                      openModal(<UpdateProvider provider={provider} />)
+                      openModal(<UpdateProvider provider={provider} />,{
+                        title: 'Editar Proveedor',
+                      })
                     }
                   >
                     <PencilAltIcon />
