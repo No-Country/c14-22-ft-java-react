@@ -6,6 +6,7 @@ COPY .mvn .mvn
 COPY pom.xml .
 COPY src src
 
+RUN chmod +x mvnw
 RUN ./mvnw install -DskipTests
 
 FROM eclipse-temurin:17-jdk-alpine
