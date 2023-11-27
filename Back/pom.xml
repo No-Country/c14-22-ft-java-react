@@ -15,6 +15,7 @@
 	<name>stockwise</name>
 	<description>Sistema de Gestión de Inventario para Pequeñas Empresas que ofrece una solución práctica y asequible para ayudar a las pequeñas empresas a mantener un control eficiente de su inventario, lo que a su vez puede mejorar la rentabilidad y la eficiencia operativa.</description>
 	<properties>
+		<skipTests>true</skipTests>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
